@@ -1,4 +1,4 @@
-# Mezuniyet_Projesi
+## Mezuniyet_Projesi
 Bu projede iklimkrizini anlatan ve bunu etkinliklerle anlatan bir site.
 
 # İçindekiler
