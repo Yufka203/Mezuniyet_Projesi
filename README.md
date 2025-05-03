@@ -1,6 +1,24 @@
-## Mezuniyet_Projesi
-Bu projede iklimkrizini anlatan ve bunu etkinliklerle anlatan bir site.
+# Nasıl Kullanılır?
 
-# İçindekiler
+## İklim Krizi Web Sitesi (Flask + HTML + CSS)
 
-İki tane araba simgesi olucak, petrol ile çalışan arabaya pasıldığında kötü buharla dolu bir gökyüzü çıkıcak, elektrikliye basınca tertemiz bir hava olucak.
+Bu proje, iklim krizi hakkında bilgilendirici içerikler ve basit etkileşimli etkinlikler içeren bir web sitesidir.
+
+### Özellikler
+
+- Arabaların iklim krizine etkisi hakkında açıklayıcı metinler
+- Elektrikli ve benzinli araçlar ile etkileşimli etkinlik (görsel ve bilgi gösterimi)
+- Turuncu tonlarında sade ve temiz bir tasarım
+
+### Gereksinimler
+
+- Python 3
+- Flask
+
+### Kurulum
+
+1. Gerekli kütüphaneleri yükleyin:
+
+```bash
+pip install flask
+
