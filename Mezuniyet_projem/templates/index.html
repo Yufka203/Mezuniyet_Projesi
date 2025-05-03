@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İklim Krizi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>İklim Krizi ve Etkileri</h1>
+
+    <p>İklim krizi, dünyamızın sıcaklıklarının hızla artmasıyla ortaya çıkan ve giderek daha büyük bir sorun haline gelen bir çevre problemidir. Bu kriz, çevremizdeki hava koşullarını, ekosistemleri ve yaşam biçimlerini ciddi şekilde etkiler. İklim krizi, tüm dünyayı etkilemekte olup, en büyük tehditlerden biri haline gelmiştir.
+
+        İklim değişikliği, yalnızca sıcaklıkların artmasıyla ilgili değildir. Bu değişiklik, yağış düzenlerinin değişmesi, daha şiddetli hava olaylarının yaşanması ve bazı ekosistemlerin yok olması gibi pek çok olumsuz sonuca yol açar. Sıcaklıklar arttıkça, deniz seviyeleri yükselir ve bu da kıyı bölgelerinde su baskınlarına neden olabilir. Ayrıca, kutup bölgelerinde buzul kütleleri erir ve bu da okyanusları etkiler.
+        
+        Bir diğer büyük etki ise, kuraklıkların artması ve tarım alanlarının yok olmasıdır. Su kaynaklarının azalması, gıda üretimini tehdit eder. Ayrıca, aşırı sıcak hava dalgaları, hayvanların ve insanların yaşamını zorlaştırır. Doğal yaşam alanlarının yok olması, pek çok hayvan ve bitki türünün yok olma riskiyle karşı karşıya kalmasına yol açar.
+        
+        İklim krizi aynı zamanda ormanda yangınlarını, sel felaketlerini ve fırtınaları da daha sık hale getirir. Bu felaketler, insan yaşamını ve doğal kaynakları daha fazla tehdit eder. Örneğin, orman yangınları, hem doğal yaşamı yok eder hem de karbondioksit salınımını artırarak durumu daha da kötüleştirir.
+        
+        Tüm bu etkiler, insanların günlük yaşamını ve yaşam kalitesini doğrudan etkiler. İklim krizi, sadece çevreyi değil, ekonomi ve toplumsal yapıları da olumsuz şekilde etkiler. Bu nedenle, iklim krizine karşı herkesin bilinçli bir şekilde harekete geçmesi çok önemlidir.</p>
+
+
+    <h2>Arabaların İklim Krizindeki Rolü</h2>
+    <p>Günümüzdeki araçlar, fosil yakıtlarla çalışmaktadır ve bu yakıtlar atmosferdeki karbon salınımının başlıca kaynaklarındandır. Elektrikli araçlar bu konuda daha çevrecidir.</p>
+    <p>Ancak, elektrikli araçların da üretildiği elektriğin kaynağı önemlidir. Yenilenebilir kaynaklardan üretilen elektrikle çalışan araçlar çevreye daha az zarar verir.</p>
+
+    <div class="car-activity">
+        <button onclick="showImage('temiz')">Elektrikli Araba</button>
+        <button onclick="showImage('kirli')">Petrol ile Çalışan Araba</button>
+        <div>
+            <img id="temiz" src="static/temiz_hava.jpg" alt="Temiz Hava">
+            <img id="kirli" src="static/kirli_hava.jpg" alt="Kirli Hava">
+        </div>
+    </div>
+
+    <h2>Geri Dönüşüm</h2>
+    <p>Geri dönüşüm, kullandığımız bazı atıkların tekrar işlenip yeniden kullanılmasıdır. Cam, plastik, kâğıt ve metal gibi maddeler geri dönüştürülebilir. Bu sayede hem çevremizi koruruz hem de doğal kaynakları israf etmemiş oluruz. Örneğin, geri dönüştürülen bir ton kâğıt, 17 ağacın kesilmesini engeller.
+
+        Geri dönüşüm kutularına atıkları doğru şekilde atmalıyız. Böylece çöpler doğaya zarar vermez. Ayrıca, enerji tasarrufu sağlanır ve fabrikalar daha az çalışarak çevreye daha az zarar verir.
+        
+        Unutma, küçük bir adım bile dünyamız için büyük bir değişiklik yaratabilir. Geri dönüşüm yaparak çevremizi koruyabiliriz!</p>
+    <div class="recycling">
+        <div class="recycle-item" onclick="alert('Kağıt kutusuna kağıt attınız!♻️')">Kağıt</div>
+        <div class="recycle-item" onclick="alert('Cam kutusuna cam attınız!♻️')">Cam</div>
+        <div class="recycle-item" onclick="alert('Plastik kutusuna plastik attınız!♻️')">Plastik</div>
+    </div>
+
+    <h2>Enerji Seçimi</h2>
+    <p>Enerji seçimi, günlük hayatımızda hangi enerji kaynağını kullanacağımıza karar vermektir. Enerji kaynakları iki gruba ayrılır: yenilenebilir ve yenilenemez.
+
+        Yenilenebilir enerji kaynakları; güneş, rüzgar, su ve jeotermal enerjidir. Bu kaynaklar doğada sürekli bulunur ve çevreye zarar vermez.
+        Yenilenemez enerji kaynakları ise kömür, petrol ve doğal gaz gibi sınırlı kaynaklardır. Bu tür enerji çevreyi kirletir ve zamanla tükenir.
+        
+        Dünyamızı korumak için yenilenebilir enerji kaynaklarını tercih etmeliyiz. Örneğin, evlerde güneş enerjisi kullanmak ya da rüzgar türbinlerinden elektrik üretmek hem doğayı korur hem de tasarruf sağlar.
+        
+        Enerji seçimi, sadece bugünü değil, geleceğimizi de etkiler. Temiz bir dünya için doğru enerji seçimi yapmalıyız.</p>
+    <div class="energy">
+        <select id="energy-choice">
+            <option value="renewable">Yenilenebilir Enerji</option>
+            <option value="non-renewable">Yenilenemez Enerji</option>
+        </select>
+        <button onclick="displayEnergyChoice()">Seçimi Göster</button>
+        <div id="energy-result"></div>
+    </div>
+
+    <h2>Ağaç Dikimi</h2>
+    <p>Ağaç dikmek, doğayı korumanın en güzel yollarından biridir. Ağaçlar, havayı temizler, oksijen üretir ve birçok canlıya yuva olur. Ayrıca erozyonu önler ve toprağı korur.
+
+        Bir ağaç, yılda yaklaşık 100 kilo kadar karbondioksit emer. Bu sayede hava kirliliği azalır. Parklarda, bahçelerde ve boş alanlarda ağaç dikerek çevremizi daha yaşanabilir hale getirebiliriz.
+        
+        Ağaç dikmek sadece doğa için değil, insanlar için de faydalıdır. Gölgesinde dinleniriz, meyvesinden faydalanırız, ormanlar sayesinde su kaynakları korunur.
+        
+        Unutmayalım: Bir fidan, geleceğe bırakılan en değerli hediyedir. Ne kadar çok ağaç dikersek, o kadar sağlıklı bir dünyada yaşarız.
+        
+        </p>
+    <div class="tree-activity">
+        <button onclick="alert('Bir ağaç dikerek çevremizi koruyabilirsiniz!')">Ağaç Dik</button>
+    </div>
+</div>
+
+<script>
+    function showImage(type) {
+        const temiz = document.getElementById('temiz');
+        const kirli = document.getElementById('kirli');
+        temiz.style.display = 'none';
+        kirli.style.display = 'none';
+
+        if (type === 'temiz') {
+            temiz.style.display = 'block';
+        } else if (type === 'kirli') {
+            kirli.style.display = 'block';
+        }
+    }
+
+    function displayEnergyChoice() {
+        let energyChoice = document.getElementById("energy-choice").value;
+        let resultElement = document.getElementById("energy-result");
+        if (energyChoice === "renewable") {
+            resultElement.innerHTML = "Yenilenebilir enerji, çevre dostudur!";
+        } else {
+            resultElement.innerHTML = "Yenilenemez enerji, çevreye zarar verir!";
+        }
+    }
+</script>
+
+</body>
+</html>
